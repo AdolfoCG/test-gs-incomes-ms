@@ -18,7 +18,7 @@ public class IncomesController {
     @Autowired
     private IncomesService incomesService;
 
-    @PostMapping("/ingresos")
+    @PostMapping("/new-ingreso")
     public ResponseEntity<?> newIncome(@Valid @RequestBody IncomesDto incomes) {
         return incomesService.newIncome(incomes);
     }

@@ -1,6 +1,7 @@
 package com.adolfo.test.gs.incomes.dto;
 
-import jakarta.validation.constraints.NotBlank;
+import com.adolfo.test.gs.incomes.entities.Empleado;
+
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import lombok.Getter;
@@ -18,6 +19,5 @@ public class IncomesDto {
     private Float monto;
 
     @NotNull
-    @NotBlank
-    private String empleado;
+    private Empleado empleado;
 }
